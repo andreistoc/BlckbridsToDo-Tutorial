@@ -13,6 +13,7 @@
 		279C109625E52EAE00C4F1A6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C109525E52EAE00C4F1A6 /* Persistence.swift */; };
 		279C109925E52EAE00C4F1A6 /* BlckbridsToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 279C109725E52EAE00C4F1A6 /* BlckbridsToDo.xcdatamodeld */; };
 		279C10A325E535EE00C4F1A6 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C10A225E535EE00C4F1A6 /* TasksView.swift */; };
+		279C10A625E5AD3B00C4F1A6 /* TasksDoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C10A525E5AD3B00C4F1A6 /* TasksDoneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		279C109825E52EAE00C4F1A6 /* BlckbridsToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlckbridsToDo.xcdatamodel; sourceTree = "<group>"; };
 		279C109A25E52EAE00C4F1A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279C10A225E535EE00C4F1A6 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		279C10A525E5AD3B00C4F1A6 /* TasksDoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDoneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				279C109725E52EAE00C4F1A6 /* BlckbridsToDo.xcdatamodeld */,
 				279C109225E52EAE00C4F1A6 /* Preview Content */,
 				279C10A225E535EE00C4F1A6 /* TasksView.swift */,
+				279C10A525E5AD3B00C4F1A6 /* TasksDoneView.swift */,
 			);
 			path = BlckbridsToDo;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				279C109925E52EAE00C4F1A6 /* BlckbridsToDo.xcdatamodeld in Sources */,
 				279C109625E52EAE00C4F1A6 /* Persistence.swift in Sources */,
+				279C10A625E5AD3B00C4F1A6 /* TasksDoneView.swift in Sources */,
 				279C108D25E52EAD00C4F1A6 /* BlckbridsToDoApp.swift in Sources */,
 				279C10A325E535EE00C4F1A6 /* TasksView.swift in Sources */,
 			);

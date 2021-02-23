@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+var rowHeight: CGFloat = 50
+
 struct TasksView: View {
     
-    var rowHeight: CGFloat = 50
+    
     var sampleTasks = ["Task One", "Task Two", "Task Three"]
     
     
@@ -26,9 +28,13 @@ struct TasksView: View {
                 HStack {
                     Text(item.taskTitle ?? "Empty")
                     Spacer()
-                    Image(systemName: "circle")
-                        .imageScale(.large)
-                        .foregroundColor(.gray)
+                    Button(action: {
+                        markTaskAsDone(at: fetchedItems.firstIndex(of: item)!)
+                    }){
+                        Image(systemName: "circle")
+                            .imageScale(.large)
+                            .foregroundColor(.gray)
+                    }
                 }
             }.frame(height: rowHeight)
             
@@ -42,7 +48,10 @@ struct TasksView: View {
                 
             }.frame(height: rowHeight)
             
-            Text("Tasks done").frame(height: rowHeight)
+            NavigationLink(destination: TasksDoneView()) {
+                Text("Tasks done")
+                    .frame(height: rowHeight)
+            }
             
         }.listStyle(GroupedListStyle())
     }
@@ -64,6 +73,16 @@ struct TasksView: View {
         }
         
         newTaskTitle = ""
+    }
+    
+    func markTaskAsDone(at index: Int) {
+        let item = fetchedItems[index]
+        item.taskDone = true
+        do {
+            try viewContext.save()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
 
